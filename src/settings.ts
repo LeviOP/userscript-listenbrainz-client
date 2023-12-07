@@ -1,4 +1,4 @@
-import { GM_addStyle, GM_getValue, GM_setValue } from "$";
+import { GM_addStyle, GM_setValue } from "$";
 import { YtTextInputFormFieldRenderer } from "./YouTube/YtTextInputFormFieldRenderer";
 import { YtdMenuRenderer } from "./YouTube/YtdMenuRenderer";
 import { getUserConfig } from "./config";

@@ -7,7 +7,7 @@ export default defineConfig({
         monkey({
             entry: "src/main.ts",
             userscript: {
-                version: "0.1.0",
+                version: "0.2.0",
                 author: "LeviOP",
                 namespace: "https://github.com/LeviOP",
                 match: ["*://*.youtube.com/*"]

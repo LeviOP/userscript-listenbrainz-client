@@ -256,7 +256,7 @@ function getArtTrackPlaylistId(document: Document): string | null {
     try {
         url = new URL(ytMusicBrowse.microformat.microformatDataRenderer.urlCanonical);
     } catch (e) {
-        return  null;
+        return null;
     }
     const id = url.searchParams.get("list");
     return id;
