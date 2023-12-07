@@ -12,7 +12,9 @@ export function getUserConfig() {
 
 export function sanitizeUserConfig(raw: unknown): UserConfig {
     const userConfig: UserConfig = {};
+
     if (typeof raw !== "object" || raw === null) return userConfig;
+
     if ("listenBrainzToken" in raw && typeof raw.listenBrainzToken === "string") userConfig.listenBrainzToken = raw.listenBrainzToken;
 
     return userConfig;

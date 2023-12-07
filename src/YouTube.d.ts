@@ -15,6 +15,7 @@ declare global {
     interface GlobalEventHandlersEventMap {
         "yt-popup-opened": CustomEvent<YtdMenuPopupRenderer>;
         "yt-player-updated": CustomEvent<Player>;
+        "yt-page-data-updated": CustomEvent<{ pageType: string }>
     }
     interface HTMLElementTagNameMap extends CustomElementTagNameMap {}
 }
