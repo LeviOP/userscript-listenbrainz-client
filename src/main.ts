@@ -145,7 +145,7 @@ async function trackListening(ytdPlayer: YtdPlayer) {
 
     metadata = {
         track_name: track.title,
-        artist_name: track["artist-credit"].reduce((p, c) => p + c.joinphrase + c.name, ""),
+        artist_name: track["artist-credit"].reduce((p, c) => p + c.name + c.joinphrase, ""),
         release_name: mbRelease.title,
         additional_info: {
             artist_mbids: track["artist-credit"].map((a) => a.artist.id),
